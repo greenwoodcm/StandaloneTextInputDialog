@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.28627450980000002" green="0.41960784309999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.1764705926" blue="0.35686275360000003" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="jN2-xA-Nhb" firstAttribute="top" secondItem="Ndb-Yr-Jc4" secondAttribute="top" constant="154" id="DPN-C8-8jP"/>
                             <constraint firstItem="jN2-xA-Nhb" firstAttribute="centerX" secondItem="Ndb-Yr-Jc4" secondAttribute="centerX" type="default" id="eag-xP-06a"/>

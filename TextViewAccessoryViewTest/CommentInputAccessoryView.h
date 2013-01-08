@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommentInputAccessoryViewListener.h"
+#import "HiddenTextFieldView.h"
+#import "KeyboardAccessoryView.h"
 
 @protocol CommentInputAccessoryViewDelegate <NSObject>
 
@@ -15,14 +18,16 @@
 
 @end
 
-@interface CommentInputAccessoryView : UIView <UITextFieldDelegate>
+@interface CommentInputAccessoryView : UIView
 {
     UIView *parentView;
-    UIView *container;
+    
+    HiddenTextFieldView *hiddenView;
+    KeyboardAccessoryView *accessoryView;
+    
+    CommentInputAccessoryViewListener *listener;
 }
 
-@property (weak, nonatomic) IBOutlet UITextField *hiddenTextField;
-@property (weak, nonatomic) IBOutlet UITextField *accessoryTextField;
 @property (weak, nonatomic) id<CommentInputAccessoryViewDelegate> delegate;
 
 -(id)initFromView:(UIView*)view;

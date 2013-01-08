@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A0B4EBF169C9913003D66AD /* CommentInputAccessoryViewListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B4EBE169C9913003D66AD /* CommentInputAccessoryViewListener.m */; };
+		4A0B4EC6169C9DD2003D66AD /* HiddenTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B4EC5169C9DD2003D66AD /* HiddenTextFieldView.m */; };
+		4A0B4EC9169CA076003D66AD /* KeyboardAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B4EC8169CA076003D66AD /* KeyboardAccessoryView.m */; };
 		4A14EBE8169BCB260089250E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A14EBE7169BCB260089250E /* UIKit.framework */; };
 		4A14EBEA169BCB260089250E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A14EBE9169BCB260089250E /* Foundation.framework */; };
 		4A14EBEC169BCB260089250E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A14EBEB169BCB260089250E /* CoreGraphics.framework */; };
@@ -19,9 +21,9 @@
 		4A14EBFE169BCB260089250E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EBFD169BCB260089250E /* Default-568h@2x.png */; };
 		4A14EC01169BCB260089250E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EBFF169BCB260089250E /* MainStoryboard.storyboard */; };
 		4A14EC04169BCB260089250E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EC03169BCB260089250E /* ViewController.m */; };
-		4A14EC0B169BCB3D0089250E /* CommentInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EC0A169BCB3D0089250E /* CommentInputAccessoryView.xib */; };
+		4A14EC0B169BCB3D0089250E /* KeyboardAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EC0A169BCB3D0089250E /* KeyboardAccessoryView.xib */; };
 		4A14EC16169BD8030089250E /* CommentInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EC15169BD8030089250E /* CommentInputAccessoryView.m */; };
-		4A14EC18169BD8E30089250E /* CommentInputAccessoryContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EC17169BD8E30089250E /* CommentInputAccessoryContainer.xib */; };
+		4A14EC18169BD8E30089250E /* HiddenTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EC17169BD8E30089250E /* HiddenTextFieldView.xib */; };
 		4A14EC28169BDFBB0089250E /* CustomKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EC26169BDFBB0089250E /* CustomKeyboardController.m */; };
 		4A14EC29169BDFBB0089250E /* CustomKeyboardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EC27169BDFBB0089250E /* CustomKeyboardController.xib */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,10 @@
 /* Begin PBXFileReference section */
 		4A0B4EBD169C9913003D66AD /* CommentInputAccessoryViewListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInputAccessoryViewListener.h; sourceTree = "<group>"; };
 		4A0B4EBE169C9913003D66AD /* CommentInputAccessoryViewListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInputAccessoryViewListener.m; sourceTree = "<group>"; };
+		4A0B4EC4169C9DD2003D66AD /* HiddenTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiddenTextFieldView.h; sourceTree = "<group>"; };
+		4A0B4EC5169C9DD2003D66AD /* HiddenTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiddenTextFieldView.m; sourceTree = "<group>"; };
+		4A0B4EC7169CA076003D66AD /* KeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAccessoryView.h; sourceTree = "<group>"; };
+		4A0B4EC8169CA076003D66AD /* KeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAccessoryView.m; sourceTree = "<group>"; };
 		4A14EBE3169BCB260089250E /* TextViewAccessoryViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextViewAccessoryViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A14EBE7169BCB260089250E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4A14EBE9169BCB260089250E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,10 +51,10 @@
 		4A14EC00169BCB260089250E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4A14EC02169BCB260089250E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4A14EC03169BCB260089250E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4A14EC0A169BCB3D0089250E /* CommentInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentInputAccessoryView.xib; sourceTree = "<group>"; };
+		4A14EC0A169BCB3D0089250E /* KeyboardAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardAccessoryView.xib; sourceTree = "<group>"; };
 		4A14EC14169BD8030089250E /* CommentInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInputAccessoryView.h; sourceTree = "<group>"; };
 		4A14EC15169BD8030089250E /* CommentInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInputAccessoryView.m; sourceTree = "<group>"; };
-		4A14EC17169BD8E30089250E /* CommentInputAccessoryContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentInputAccessoryContainer.xib; sourceTree = "<group>"; };
+		4A14EC17169BD8E30089250E /* HiddenTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HiddenTextFieldView.xib; sourceTree = "<group>"; };
 		4A14EC25169BDFBB0089250E /* CustomKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomKeyboardController.h; sourceTree = "<group>"; };
 		4A14EC26169BDFBB0089250E /* CustomKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboardController.m; sourceTree = "<group>"; };
 		4A14EC27169BDFBB0089250E /* CustomKeyboardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomKeyboardController.xib; sourceTree = "<group>"; };
@@ -102,8 +108,12 @@
 				4A14EC15169BD8030089250E /* CommentInputAccessoryView.m */,
 				4A0B4EBD169C9913003D66AD /* CommentInputAccessoryViewListener.h */,
 				4A0B4EBE169C9913003D66AD /* CommentInputAccessoryViewListener.m */,
-				4A14EC0A169BCB3D0089250E /* CommentInputAccessoryView.xib */,
-				4A14EC17169BD8E30089250E /* CommentInputAccessoryContainer.xib */,
+				4A0B4EC7169CA076003D66AD /* KeyboardAccessoryView.h */,
+				4A0B4EC8169CA076003D66AD /* KeyboardAccessoryView.m */,
+				4A14EC0A169BCB3D0089250E /* KeyboardAccessoryView.xib */,
+				4A0B4EC4169C9DD2003D66AD /* HiddenTextFieldView.h */,
+				4A0B4EC5169C9DD2003D66AD /* HiddenTextFieldView.m */,
+				4A14EC17169BD8E30089250E /* HiddenTextFieldView.xib */,
 				4A14EBF6169BCB260089250E /* AppDelegate.h */,
 				4A14EBF7169BCB260089250E /* AppDelegate.m */,
 				4A14EBFF169BCB260089250E /* MainStoryboard.storyboard */,
@@ -187,8 +197,8 @@
 				4A14EBFC169BCB260089250E /* Default@2x.png in Resources */,
 				4A14EBFE169BCB260089250E /* Default-568h@2x.png in Resources */,
 				4A14EC01169BCB260089250E /* MainStoryboard.storyboard in Resources */,
-				4A14EC0B169BCB3D0089250E /* CommentInputAccessoryView.xib in Resources */,
-				4A14EC18169BD8E30089250E /* CommentInputAccessoryContainer.xib in Resources */,
+				4A14EC0B169BCB3D0089250E /* KeyboardAccessoryView.xib in Resources */,
+				4A14EC18169BD8E30089250E /* HiddenTextFieldView.xib in Resources */,
 				4A14EC29169BDFBB0089250E /* CustomKeyboardController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +216,8 @@
 				4A14EC16169BD8030089250E /* CommentInputAccessoryView.m in Sources */,
 				4A14EC28169BDFBB0089250E /* CustomKeyboardController.m in Sources */,
 				4A0B4EBF169C9913003D66AD /* CommentInputAccessoryViewListener.m in Sources */,
+				4A0B4EC6169C9DD2003D66AD /* HiddenTextFieldView.m in Sources */,
+				4A0B4EC9169CA076003D66AD /* KeyboardAccessoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

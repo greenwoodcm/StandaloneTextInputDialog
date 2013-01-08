@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HiddenTextFieldView.h"
+#import "KeyboardAccessoryView.h"
 
-@interface CommentInputAccessoryViewListener : NSObject
+@interface CommentInputAccessoryViewListener : NSObject <UITextFieldDelegate>
+{
+    HiddenTextFieldView *hiddenView;
+    KeyboardAccessoryView *accessoryView;
+}
+
+-(id)initWithHiddenView:(HiddenTextFieldView*)hv andAccessoryView:(KeyboardAccessoryView*)av;
 
 @end
