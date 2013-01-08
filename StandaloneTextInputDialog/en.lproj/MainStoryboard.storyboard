@@ -25,13 +25,34 @@
                                     <action selector="show:" destination="5q4-cj-D7P" eventType="touchUpInside" id="Lto-yg-mtx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text From popup :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75e-iT-Qts">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8o-TS-8ez">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3hB-8y-WdA"/>
+                                    <constraint firstAttribute="width" constant="261" id="lvF-Fq-48c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.1764705926" blue="0.35686275360000003" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="jN2-xA-Nhb" firstAttribute="top" secondItem="Ndb-Yr-Jc4" secondAttribute="top" constant="154" id="DPN-C8-8jP"/>
+                            <constraint firstItem="jN2-xA-Nhb" firstAttribute="top" secondItem="Ndb-Yr-Jc4" secondAttribute="top" constant="154" id="G2k-Iu-VDj"/>
+                            <constraint firstItem="w8o-TS-8ez" firstAttribute="top" secondItem="75e-iT-Qts" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HdQ-y8-pQE"/>
+                            <constraint firstItem="w8o-TS-8ez" firstAttribute="leading" secondItem="75e-iT-Qts" secondAttribute="leading" type="default" id="Lbi-M6-FVG"/>
+                            <constraint firstAttribute="trailing" secondItem="w8o-TS-8ez" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dAS-Aw-Hf2"/>
                             <constraint firstItem="jN2-xA-Nhb" firstAttribute="centerX" secondItem="Ndb-Yr-Jc4" secondAttribute="centerX" type="default" id="eag-xP-06a"/>
+                            <constraint firstItem="75e-iT-Qts" firstAttribute="top" secondItem="Ndb-Yr-Jc4" secondAttribute="top" constant="37" id="xRA-eu-6jb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultTextLabel" destination="w8o-TS-8ez" id="co9-SS-tvk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AD-Le-CG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

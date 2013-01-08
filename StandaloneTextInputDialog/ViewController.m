@@ -29,13 +29,15 @@
 - (IBAction)show:(id)sender {
     
     view = [[CommentInputAccessoryView alloc] initFromView:self.view];
+    view.delegate = self;
     [view show];
      
     
 }
 
--(void)textFieldDidBeginEditing:(UITextField *)textField
+-(void)didCompleteWithText:(NSString *)text
 {
-    
+    self.resultTextLabel.text = text;
 }
+
 @end

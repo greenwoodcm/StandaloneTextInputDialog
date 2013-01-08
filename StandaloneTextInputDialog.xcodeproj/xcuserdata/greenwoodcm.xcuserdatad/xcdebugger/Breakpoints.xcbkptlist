@@ -59,26 +59,26 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "StandaloneTextInputDialog/StandaloneTextInputDialog/CommentInputAccessoryViewListener.m"
-         timestampString = "379372844.358334"
+         filePath = "StandaloneTextInputDialog/StandaloneTextInputDialog/CommentInputAccessoryView.m"
+         timestampString = "379373929.468911"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
-         landmarkName = "-changeFirstResponder"
+         startingLineNumber = "62"
+         endingLineNumber = "62"
+         landmarkName = "-show"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "StandaloneTextInputDialog/StandaloneTextInputDialog/CommentInputAccessoryView.m"
-         timestampString = "379373016.763749"
+         filePath = "StandaloneTextInputDialog/ViewController.m"
+         timestampString = "379374108.005348"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
-         landmarkName = "-show"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
+         landmarkName = "-didCompleteWithText:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

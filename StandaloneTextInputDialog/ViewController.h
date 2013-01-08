@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "CommentInputAccessoryView.h"
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController <CommentInputAccessoryViewDelegate>
 {
     CommentInputAccessoryView *view;
 }
 
 - (IBAction)show:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UILabel *resultTextLabel;
 
 @end
