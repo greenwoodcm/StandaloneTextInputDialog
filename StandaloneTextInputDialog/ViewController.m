@@ -28,9 +28,11 @@
 
 - (IBAction)show:(id)sender {
     
-    view = [[CommentInputAccessoryView alloc] initFromView:self.view];
-    view.delegate = self;
-    [view show];
+    dialog = [[StandaloneTextInputDialog alloc] initFromView:self.view];
+    dialog.delegate = self;
+    [dialog.textField setAutocapitalizationType:UITextAutocapitalizationTypeAllCharacters];
+    
+    [dialog show];
      
     
 }

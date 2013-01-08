@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CommentInputAccessoryView.h"
+#import "StandaloneTextInputDialog.h"
 
 @interface ViewController : UIViewController <CommentInputAccessoryViewDelegate>
 {
-    CommentInputAccessoryView *view;
+    StandaloneTextInputDialog *dialog;
 }
 
 - (IBAction)show:(id)sender;

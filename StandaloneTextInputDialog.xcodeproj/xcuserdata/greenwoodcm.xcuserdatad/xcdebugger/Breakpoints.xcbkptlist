@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StandaloneTextInputDialog/ViewController.m"
-         timestampString = "379374108.005348"
+         timestampString = "379374441.19096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "40"
-         endingLineNumber = "40"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
          landmarkName = "-didCompleteWithText:"
          landmarkType = "5">
       </FileBreakpoint>

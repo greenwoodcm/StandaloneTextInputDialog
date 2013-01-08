@@ -11,13 +11,15 @@
 #import "KeyboardAccessoryView.h"
 
 @protocol CommentInputAccessoryViewDelegate <NSObject>
-
+@required
 -(void)didCompleteWithText:(NSString*)text;
+
+@optional
 -(void)didCancel;
 
 @end
 
-@interface CommentInputAccessoryView : NSObject <UITextFieldDelegate>
+@interface StandaloneTextInputDialog : NSObject <UITextFieldDelegate>
 {
     UIView *parentView;
     
@@ -26,6 +28,7 @@
 }
 
 @property (weak, nonatomic) id<CommentInputAccessoryViewDelegate> delegate;
+@property (readonly, nonatomic) UITextField *textField;
 
 -(id)initFromView:(UIView*)view;
 

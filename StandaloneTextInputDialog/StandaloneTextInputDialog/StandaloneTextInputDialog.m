@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Chris Greenwood. All rights reserved.
 //
 
-#import "CommentInputAccessoryView.h"
+#import "StandaloneTextInputDialog.h"
 
-@implementation CommentInputAccessoryView
+@implementation StandaloneTextInputDialog
 
 -(id)initFromView:(UIView *)view
 {
@@ -22,28 +22,26 @@
         
         // add the accessory view to the container's hidden text field
         accessoryView = [[KeyboardAccessoryView alloc] init];
-        //[parentView addSubview:accessoryView];
+        accessoryView.accessoryTextField.delegate = self;
         [hiddenView.hiddenTextField setInputAccessoryView:accessoryView.container];
         
-        // initialize the listener
-        //listener = [[CommentInputAccessoryViewListener alloc] initWithHiddenView:hiddenView andAccessoryView:accessoryView];
-        
-        [self initializeDelegates];
-        
+        [self addKeyboardListener];
     }
     return self;
 }
 
--(void)initializeDelegates
+-(void)addKeyboardListener
 {
     // start listening for first responder change
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(changeFirstResponder)
                                                  name:UIKeyboardDidShowNotification
                                                object:nil];
-    
-    // set the accessory field's delegate
-    accessoryView.accessoryTextField.delegate = self;
+}
+
+-(void)removeKeyboardListener
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 /*
@@ -55,6 +53,11 @@
 {
     NSLog(@"UIKeyboardDidShowNotification fired");
     [accessoryView.accessoryTextField becomeFirstResponder];
+}
+
+-(UITextField*)textField
+{
+    return accessoryView.accessoryTextField;
 }
 
 -(void)show
@@ -78,6 +81,7 @@
         [hiddenView removeFromSuperview];
         
         [self.delegate didCompleteWithText:textToReturn];
+        [self removeKeyboardListener];
     }
     
     return NO;
