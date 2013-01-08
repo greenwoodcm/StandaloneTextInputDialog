@@ -60,9 +60,15 @@
     return accessoryView.accessoryTextField;
 }
 
+-(BOOL)isShowing
+{
+    return _isShowing;
+}
+
 -(void)show
 {
     [hiddenView.hiddenTextField becomeFirstResponder];
+    _isShowing = YES;
 }
 
 #pragma UITextFieldDelegate methods
@@ -79,6 +85,8 @@
         // remove the hidden view from its superview because
         // we're done with this animation
         [hiddenView removeFromSuperview];
+        
+        _isShowing = NO;
         
         [self.delegate didCompleteWithText:textToReturn];
         [self removeKeyboardListener];

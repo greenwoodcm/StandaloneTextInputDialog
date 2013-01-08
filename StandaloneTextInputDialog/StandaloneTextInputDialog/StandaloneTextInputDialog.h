@@ -25,10 +25,13 @@
     
     HiddenTextFieldView *hiddenView;
     KeyboardAccessoryView *accessoryView;
+    
+    BOOL _isShowing;
 }
 
 @property (weak, nonatomic) id<CommentInputAccessoryViewDelegate> delegate;
 @property (readonly, nonatomic) UITextField *textField;
+@property (readonly, nonatomic) BOOL isShowing;
 
 -(id)initFromView:(UIView*)view;
 

@@ -27,14 +27,14 @@
 }
 
 - (IBAction)show:(id)sender {
-    
-    dialog = [[StandaloneTextInputDialog alloc] initFromView:self.view];
-    dialog.delegate = self;
-    [dialog.textField setAutocapitalizationType:UITextAutocapitalizationTypeAllCharacters];
-    
-    [dialog show];
-     
-    
+    if(!dialog || !dialog.isShowing)
+    {
+        dialog = [[StandaloneTextInputDialog alloc] initFromView:self.view];
+        dialog.delegate = self;
+        [dialog.textField setAutocapitalizationType:UITextAutocapitalizationTypeAllCharacters];
+        
+        [dialog show];
+    }
 }
 
 -(void)didCompleteWithText:(NSString *)text
