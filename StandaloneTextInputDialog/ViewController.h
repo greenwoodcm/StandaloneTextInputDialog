@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "CommentInputAccessoryView.h"
-#import "CustomKeyboardController.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 

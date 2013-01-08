@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "HiddenTextFieldView.h"
+#import "KeyboardAccessoryView.h"
 
 @interface CommentInputAccessoryViewListener : NSObject <UITextFieldDelegate>
 {
