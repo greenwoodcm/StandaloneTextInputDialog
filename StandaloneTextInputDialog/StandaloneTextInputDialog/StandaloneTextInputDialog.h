@@ -10,7 +10,7 @@
 #import "HiddenTextFieldView.h"
 #import "KeyboardAccessoryView.h"
 
-@protocol CommentInputAccessoryViewDelegate <NSObject>
+@protocol StandaloneTextInputDialogDelegate <NSObject>
 @required
 -(void)didCompleteWithText:(NSString*)text;
 
@@ -29,7 +29,7 @@
     BOOL _isShowing;
 }
 
-@property (weak, nonatomic) id<CommentInputAccessoryViewDelegate> delegate;
+@property (weak, nonatomic) id<StandaloneTextInputDialogDelegate> delegate;
 @property (readonly, nonatomic) UITextField *textField;
 @property (readonly, nonatomic) BOOL isShowing;
 

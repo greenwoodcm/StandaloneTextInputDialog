@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StandaloneTextInputDialog.h"
 
-@interface ViewController : UIViewController <CommentInputAccessoryViewDelegate>
+@interface ViewController : UIViewController <StandaloneTextInputDialogDelegate>
 {
     StandaloneTextInputDialog *dialog;
 }
