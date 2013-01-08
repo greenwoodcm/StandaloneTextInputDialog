@@ -28,7 +28,7 @@
 
 - (IBAction)show:(id)sender {
     
-    CommentInputAccessoryView *view = [[CommentInputAccessoryView alloc] initFromView:self.view];
+    view = [[CommentInputAccessoryView alloc] initFromView:self.view];
     [view show];
      
     

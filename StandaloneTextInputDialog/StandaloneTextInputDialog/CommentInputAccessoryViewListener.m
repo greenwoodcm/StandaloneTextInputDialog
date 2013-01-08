@@ -26,10 +26,10 @@
 -(void)initialize
 {
     // start listening for first responder change
-    //[[NSNotificationCenter defaultCenter] addObserver:self
-    //                                         selector:@selector(changeFirstResponder)
-    //                                             name:UIKeyboardDidShowNotification
-    //                                           object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(changeFirstResponder)
+                                                 name:UIKeyboardDidShowNotification
+                                               object:nil];
     
     // set the accessory field's delegate
     accessoryView.accessoryTextField.delegate = self;
@@ -42,6 +42,7 @@
  */
 -(void)changeFirstResponder
 {
+    NSLog(@"UIKeyboardDidShowNotification fired");
     [accessoryView.accessoryTextField becomeFirstResponder];
 }
 

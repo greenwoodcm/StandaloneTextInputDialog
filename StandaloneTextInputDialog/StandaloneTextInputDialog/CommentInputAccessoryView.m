@@ -10,15 +10,6 @@
 
 @implementation CommentInputAccessoryView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
 -(id)initFromView:(UIView *)view
 {
     self = [self init];
@@ -31,7 +22,7 @@
         
         // add the accessory view to the container's hidden text field
         accessoryView = [[KeyboardAccessoryView alloc] init];
-        [parentView addSubview:accessoryView];
+        //[parentView addSubview:accessoryView];
         [hiddenView.hiddenTextField setInputAccessoryView:accessoryView.container];
         
         // initialize the listener

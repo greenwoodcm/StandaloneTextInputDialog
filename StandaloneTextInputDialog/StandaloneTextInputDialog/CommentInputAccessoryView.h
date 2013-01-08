@@ -18,7 +18,7 @@
 
 @end
 
-@interface CommentInputAccessoryView : UIView
+@interface CommentInputAccessoryView : NSObject
 {
     UIView *parentView;
     

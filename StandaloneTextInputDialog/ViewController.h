@@ -10,6 +10,9 @@
 #import "CommentInputAccessoryView.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
+{
+    CommentInputAccessoryView *view;
+}
 
 - (IBAction)show:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *button;
