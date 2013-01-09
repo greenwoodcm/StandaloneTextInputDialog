@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A0B4F02169CAB48003D66AD /* CommentInputAccessoryContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0B4EF3169CAB48003D66AD /* CommentInputAccessoryContainer.xib */; };
 		4A0B4F03169CAB48003D66AD /* StandaloneTextInputDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B4EF5169CAB48003D66AD /* StandaloneTextInputDialog.m */; };
-		4A0B4F04169CAB48003D66AD /* StandaloneTextInputDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0B4EF6169CAB48003D66AD /* StandaloneTextInputDialog.xib */; };
 		4A0B4F08169CAB48003D66AD /* HiddenTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B4EFD169CAB48003D66AD /* HiddenTextFieldView.m */; };
 		4A0B4F09169CAB48003D66AD /* HiddenTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0B4EFE169CAB48003D66AD /* HiddenTextFieldView.xib */; };
 		4A0B4F14169CADBA003D66AD /* KeyboardAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B4F12169CADBA003D66AD /* KeyboardAccessoryView.m */; };
@@ -28,10 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A0B4EF3169CAB48003D66AD /* CommentInputAccessoryContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentInputAccessoryContainer.xib; sourceTree = "<group>"; };
 		4A0B4EF4169CAB48003D66AD /* StandaloneTextInputDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandaloneTextInputDialog.h; sourceTree = "<group>"; };
 		4A0B4EF5169CAB48003D66AD /* StandaloneTextInputDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandaloneTextInputDialog.m; sourceTree = "<group>"; };
-		4A0B4EF6169CAB48003D66AD /* StandaloneTextInputDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandaloneTextInputDialog.xib; sourceTree = "<group>"; };
 		4A0B4EFC169CAB48003D66AD /* HiddenTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiddenTextFieldView.h; sourceTree = "<group>"; };
 		4A0B4EFD169CAB48003D66AD /* HiddenTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiddenTextFieldView.m; sourceTree = "<group>"; };
 		4A0B4EFE169CAB48003D66AD /* HiddenTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HiddenTextFieldView.xib; sourceTree = "<group>"; };
@@ -79,10 +75,8 @@
 				4A0B4EFC169CAB48003D66AD /* HiddenTextFieldView.h */,
 				4A0B4EFD169CAB48003D66AD /* HiddenTextFieldView.m */,
 				4A0B4EFE169CAB48003D66AD /* HiddenTextFieldView.xib */,
-				4A0B4EF3169CAB48003D66AD /* CommentInputAccessoryContainer.xib */,
 				4A0B4EF4169CAB48003D66AD /* StandaloneTextInputDialog.h */,
 				4A0B4EF5169CAB48003D66AD /* StandaloneTextInputDialog.m */,
-				4A0B4EF6169CAB48003D66AD /* StandaloneTextInputDialog.xib */,
 			);
 			path = StandaloneTextInputDialog;
 			sourceTree = "<group>";
@@ -198,8 +192,6 @@
 				4A14EBFC169BCB260089250E /* Default@2x.png in Resources */,
 				4A14EBFE169BCB260089250E /* Default-568h@2x.png in Resources */,
 				4A14EC01169BCB260089250E /* MainStoryboard.storyboard in Resources */,
-				4A0B4F02169CAB48003D66AD /* CommentInputAccessoryContainer.xib in Resources */,
-				4A0B4F04169CAB48003D66AD /* StandaloneTextInputDialog.xib in Resources */,
 				4A0B4F09169CAB48003D66AD /* HiddenTextFieldView.xib in Resources */,
 				4A0B4F15169CADBA003D66AD /* KeyboardAccessoryView.xib in Resources */,
 			);

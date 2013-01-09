@@ -10,26 +10,15 @@
 
 @implementation HiddenTextFieldView
 
--(id)init
++(id)hiddenTextFieldView
 {
-    self = [super init];
-    if(self)
+    HiddenTextFieldView *view = [[[NSBundle mainBundle] loadNibNamed:@"HiddenTextFieldView" owner:self options:nil] objectAtIndex:0];
+    
+    if([view isKindOfClass:[HiddenTextFieldView class]])
     {
-        // add the subview this view owns
-        subview = [[[NSBundle mainBundle] loadNibNamed:@"HiddenTextFieldView" owner:self options:nil] objectAtIndex:0];
-        
-        [self addSubview:subview];
+        return view;
     }
-    return self;
+    return nil;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

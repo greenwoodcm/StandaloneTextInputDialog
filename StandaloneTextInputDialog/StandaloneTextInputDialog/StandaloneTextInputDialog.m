@@ -9,6 +9,7 @@
 #import "StandaloneTextInputDialog.h"
 
 @implementation StandaloneTextInputDialog
+@synthesize accessoryView = _accessoryView;
 
 -(id)initFromView:(UIView *)view
 {
@@ -17,13 +18,13 @@
     {
         parentView = view;
         
-        hiddenView = [[HiddenTextFieldView alloc] init];
-        [parentView addSubview:hiddenView];
+        _hiddenView = [HiddenTextFieldView hiddenTextFieldView];
+        [parentView addSubview:_hiddenView];
         
         // add the accessory view to the container's hidden text field
-        accessoryView = [[KeyboardAccessoryView alloc] init];
-        accessoryView.accessoryTextField.delegate = self;
-        [hiddenView.hiddenTextField setInputAccessoryView:accessoryView.container];
+        _accessoryView = [KeyboardAccessoryView keyboardAccessoryView];
+        _accessoryView.textField.delegate = self;
+        [_hiddenView.hiddenTextField setInputAccessoryView:self.accessoryView];
         
         [self addKeyboardListener];
     }
@@ -52,12 +53,12 @@
 -(void)changeFirstResponder
 {
     NSLog(@"UIKeyboardDidShowNotification fired");
-    [accessoryView.accessoryTextField becomeFirstResponder];
+    [self.accessoryView.textField becomeFirstResponder];
 }
 
 -(UITextField*)textField
 {
-    return accessoryView.accessoryTextField;
+    return self.accessoryView.textField;
 }
 
 -(BOOL)isShowing
@@ -67,7 +68,7 @@
 
 -(void)show
 {
-    [hiddenView.hiddenTextField becomeFirstResponder];
+    [_hiddenView.hiddenTextField becomeFirstResponder];
     _isShowing = YES;
 }
 
@@ -75,16 +76,16 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if([textField isEqual:accessoryView.accessoryTextField])
+    if([textField isEqual:self.accessoryView.textField])
     {
-        NSString *textToReturn = accessoryView.accessoryTextField.text;
+        NSString *textToReturn = self.accessoryView.textField.text;
         
         // dismiss the keyboard and accessory view
         [textField resignFirstResponder];
         
         // remove the hidden view from its superview because
         // we're done with this animation
-        [hiddenView removeFromSuperview];
+        [_hiddenView removeFromSuperview];
         
         _isShowing = NO;
         

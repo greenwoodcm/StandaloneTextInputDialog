@@ -10,17 +10,14 @@
 
 @implementation KeyboardAccessoryView
 
--(id)init
++(id)keyboardAccessoryView
 {
-    self = [super init];
-    if(self)
+    KeyboardAccessoryView *view = [[[NSBundle mainBundle] loadNibNamed:@"KeyboardAccessoryView" owner:self options:nil] objectAtIndex:0];
+    if([view isKindOfClass:[KeyboardAccessoryView class]])
     {
-        self.container = [[[NSBundle mainBundle] loadNibNamed:@"KeyboardAccessoryView" owner:self options:nil] objectAtIndex:0];
-        [self addSubview:self.container];
-        
-        //[self.accessoryTextField setInputAccessoryView:self.container];
+        return view;
     }
-    return self;
+    return nil;
 }
 
 @end

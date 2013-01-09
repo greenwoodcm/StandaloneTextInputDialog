@@ -27,11 +27,20 @@
 }
 
 - (IBAction)show:(id)sender {
+    
+    /*
+        If the dialog has already been instantiated and is currently showing,
+        re-instantiating it will cause a crash.
+     */
     if(!dialog || !dialog.isShowing)
     {
         dialog = [[StandaloneTextInputDialog alloc] initFromView:self.view];
         dialog.delegate = self;
-        [dialog.textField setAutocapitalizationType:UITextAutocapitalizationTypeAllCharacters];
+        
+        // access the accessoryView property to change the look of
+        // the keyboard accessory view
+        dialog.accessoryView.backgroundColor = [UIColor orangeColor];
+        [dialog.accessoryView.textField setAutocapitalizationType:UITextAutocapitalizationTypeWords];
         
         [dialog show];
     }

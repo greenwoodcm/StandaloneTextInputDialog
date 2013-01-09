@@ -23,15 +23,17 @@
 {
     UIView *parentView;
     
-    HiddenTextFieldView *hiddenView;
-    KeyboardAccessoryView *accessoryView;
+    HiddenTextFieldView *_hiddenView;
     
     BOOL _isShowing;
 }
 
 @property (weak, nonatomic) id<StandaloneTextInputDialogDelegate> delegate;
-@property (readonly, nonatomic) UITextField *textField;
 @property (readonly, nonatomic) BOOL isShowing;
+
+// this is externalized so that the user
+// can set things like background color and autocomplete options
+@property (readonly, nonatomic) KeyboardAccessoryView *accessoryView;
 
 -(id)initFromView:(UIView*)view;
 

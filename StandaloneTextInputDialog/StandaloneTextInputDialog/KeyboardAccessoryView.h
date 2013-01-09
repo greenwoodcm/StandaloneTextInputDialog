@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface KeyboardAccessoryView : UIView
-{
-}
 
-@property (weak, nonatomic) IBOutlet UITextField *accessoryTextField;
-@property (strong, nonatomic) UIView *container;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
++(id)keyboardAccessoryView;
+
 @end

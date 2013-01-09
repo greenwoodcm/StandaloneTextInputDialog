@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HiddenTextFieldView : UIView
-{
-    UIView *subview;
-}
+
++(id)hiddenTextFieldView;
+
 @property (weak, nonatomic) IBOutlet UITextField *hiddenTextField;
+
 @end
