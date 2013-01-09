@@ -24,4 +24,6 @@ Finally, call [dialog show] to make the keyboard dialog popup on screen.  The de
 
 This method is called right before the dialog is removed from screen, and returns whatever text appears in the text box at that time.
 
+**IMPORTANT** : the StandaloneTextInputDialog object must remain in scope throughout the life cycle of the dialog.  So you cannot just instantiate it, set the delegate, and call [dialog show].  You must assign it to a member variable of the containing class (whether it be the parent view, a view controller, etc.).
+
 [![screenshot](https://raw.github.com/greenwoodcm/StandaloneTextInputDialog/master/readme_images/modal_view.png)]
