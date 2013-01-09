@@ -23,3 +23,5 @@ Finally, call [dialog show] to make the keyboard dialog popup on screen.  The de
 	-(void)didCompleteWithText:(NSString *)text
 
 This method is called right before the dialog is removed from screen, and returns whatever text appears in the text box at that time.
+
+[![screenshot](readme_images/modal_view.png)]
