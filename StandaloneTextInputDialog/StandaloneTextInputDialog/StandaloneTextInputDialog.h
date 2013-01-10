@@ -10,9 +10,11 @@
 #import "HiddenTextFieldView.h"
 #import "KeyboardAccessoryView.h"
 
+@class StandaloneTextInputDialog;
+
 @protocol StandaloneTextInputDialogDelegate <NSObject>
 @required
--(void)didCompleteWithText:(NSString*)text;
+-(void)standaloneTextInputDialog:(StandaloneTextInputDialog*)dialog didCompleteWithText:(NSString*)text;
 
 @optional
 -(void)didCancel;
