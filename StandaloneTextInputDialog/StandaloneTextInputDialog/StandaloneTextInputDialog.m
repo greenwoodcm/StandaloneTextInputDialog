@@ -45,6 +45,25 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+-(void)addParentViewTapListener
+{
+    parentTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(masterViewTapped)];
+    
+    [parentView addGestureRecognizer:parentTap];
+}
+
+-(void)removeParentViewTapListener
+{
+    [parentView removeGestureRecognizer:parentTap];
+}
+
+-(void)masterViewTapped
+{
+    NSLog(@"Parent view tapped");
+    
+    [self textFieldShouldReturn:self.accessoryView.textField];
+}
+
 /*
  This is called when the hidden text field finally obtains first responder status.
  When this occurs, the keyboard is visible and we can shift first responder status
@@ -70,6 +89,8 @@
 {
     [_hiddenView.hiddenTextField becomeFirstResponder];
     _isShowing = YES;
+    
+    [self addParentViewTapListener];
 }
 
 #pragma UITextFieldDelegate methods
@@ -88,6 +109,8 @@
         [_hiddenView removeFromSuperview];
         
         _isShowing = NO;
+        
+        [self removeParentViewTapListener];
         
         [self.delegate didCompleteWithText:textToReturn];
         [self removeKeyboardListener];

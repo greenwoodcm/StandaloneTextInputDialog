@@ -22,6 +22,7 @@
 @interface StandaloneTextInputDialog : NSObject <UITextFieldDelegate>
 {
     UIView *parentView;
+    UITapGestureRecognizer *parentTap;
     
     HiddenTextFieldView *_hiddenView;
     
