@@ -112,7 +112,7 @@
         
         [self removeParentViewTapListener];
         
-        [self.delegate didCompleteWithText:textToReturn];
+        [self.delegate standaloneTextInputDialog:self didCompleteWithText:textToReturn];
         [self removeKeyboardListener];
     }
     

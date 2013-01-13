@@ -46,7 +46,7 @@
     }
 }
 
--(void)didCompleteWithText:(NSString *)text
+-(void)standaloneTextInputDialog:(StandaloneTextInputDialog *)dialog didCompleteWithText:(NSString *)text
 {
     self.resultTextLabel.text = text;
 }
